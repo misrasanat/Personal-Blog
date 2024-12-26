@@ -1,0 +1,62 @@
+.custom-navbar {
+  background-color: #343a40; /* Dark background color for the bar */
+  color: white; /* Text color for contrast */
+  position: fixed; /* Fix the navbar to the top of the screen */
+  top: 0; /* Align it to the top */
+  left: 0;
+  right: 0;
+  z-index: 1030; /* Ensure it stays above other elements */
+  border-bottom: 1px solid #444; /* Subtle border for separation */
+  padding: 0.5rem 1rem
+}
+
+.nav-item {
+  flex: 1; /* Ensures equal spacing between the items */
+  text-align: center;
+}
+
+.navbar-nav {
+  width: 100%; /* Ensure the nav takes up full width */
+  justify-content: space-evenly; /* Equal spacing between nav items */
+}
+
+.nav-link {
+  font-size: 1.1rem; /* Adjust font size for better readability */
+  margin-right: 10rem; /* Add spacing between links */
+  color: #ffffff; /* Default link color */
+  transition: color 0.3s ease; /* Smooth hover effect */
+}
+
+.nav-link:hover {
+  color: #007bff; /* Change to a primary color on hover */
+  text-decoration: underline;
+}
+
+.navbar-brand {
+  font-size: 1.5rem; /* Make the brand name larger */
+  font-weight: bold;
+  text-align: center;
+}
+
+.toggle-button {
+  position: absolute; /* Position relative to the parent container */
+  top: 10px; /* Adjust spacing from the top */
+  right: 15px; /* Adjust spacing from the right */
+  background-color: #ffffff; /* Background for toggle button */
+  border: none; /* Remove border */
+  size: ;
+}
+
+.toggle-button:hover {
+  background-color: #ffc107; /* Change background color on hover */
+  transform: scale(1.1); /* Slightly enlarge the button */
+  cursor: pointer; /* Show pointer cursor */
+}
+
+.toggle-button:focus {
+  outline: none; /* Remove the focus outline */
+}
+
+body {
+  padding-top: 60px; /* Adjust this value based on the navbar height */
+}
