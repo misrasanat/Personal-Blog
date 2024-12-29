@@ -1,0 +1,10 @@
+.text-alignment {    
+    display: flex; /* Enables flexbox */
+    flex-direction: column; /* Stacks the content vertically */
+    justify-content: center; /* Centers content vertically */
+    align-items: center; /* Centers content horizontally */
+    height: 100vh; /* Full viewport height */
+    text-align: center; /* Center the text inside each element */
+    background-color: #242424; /* Optional: Add a background color */
+    color: #ffffff; /* White text color for contrast */
+}

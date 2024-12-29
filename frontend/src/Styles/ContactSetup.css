@@ -1,0 +1,30 @@
+.contact-container {
+    display: flex;
+    justify-content: center; /* Centers horizontally */
+    align-items: center; /* Centers vertically */
+    height: 100vh; /* Full viewport height */
+    background-color: #242424; /* Dark background for the page */
+  }
+  
+  /* Styles for the semi-transparent box */
+  .contact-box {
+    background-color: rgba(255, 255, 255, 0.1); /* Semi-transparent grey */
+    padding: 2rem;
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3); /* Subtle shadow for depth */
+    color: #ffffff; /* White text for contrast */
+    width: 90%;
+    max-width: 500px; /* Ensure the box doesn't get too wide */
+    text-align: center;
+  }
+  
+  /* Align input fields within the box */
+  .contact-thing {
+    margin-bottom: 1rem;
+  }
+  
+  /* Style for labels */
+  .contact-message {
+    font-size: 1rem;
+    margin-bottom: 0.5rem;
+  }
