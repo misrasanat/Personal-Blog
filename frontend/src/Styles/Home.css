@@ -1,10 +1,13 @@
-.text-alignment {    
+.text-alignment {
     display: flex; /* Enables flexbox */
     flex-direction: column; /* Stacks the content vertically */
     justify-content: center; /* Centers content vertically */
     align-items: center; /* Centers content horizontally */
     height: 100vh; /* Full viewport height */
     text-align: center; /* Center the text inside each element */
-    background-color: #242424; /* Optional: Add a background color */
+    background-image: url('../path-to-your-image.jpg'); /* Replace with your actual image path */
+    background-size: cover; /* Ensures the image covers the entire viewport */
+    background-position: center; /* Centers the background image */
+    background-repeat: no-repeat; /* Prevents repeating */
     color: #ffffff; /* White text color for contrast */
 }

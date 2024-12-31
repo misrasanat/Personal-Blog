@@ -2,6 +2,7 @@ from flask import Flask, request, jsonify
 from flask_mail import Mail, Message
 from flask_cors import CORS
 import logging
+import subprocess
 
 app = Flask(__name__)
 CORS(app)
@@ -17,6 +18,16 @@ mail = Mail(app)
 
 # Set up logging
 logging.basicConfig(level=logging.DEBUG)
+
+@app.route('/run_game', methods=['POST'])
+def run_game():
+    try:
+        # Path to your PyGame script
+        subprocess.Popen(['python', "C:/Users/misra/Documents/UCI work/H32/project5/project5.py"])
+        return jsonify({"status": "success", "message": "Game is running!"}), 200
+    except Exception as e:
+        return jsonify({"status": "error", "message": f"Failed to start game: {str(e)}"}), 500
+
 
 @app.route('/send_email', methods=['POST'])
 def send_email():
