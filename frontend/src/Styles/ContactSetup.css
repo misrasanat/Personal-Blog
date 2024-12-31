@@ -1,14 +1,49 @@
+.particles-wrapper {
+  position: absolute;
+  width: 100%;
+  height: 100vh;
+  z-index: 0; /* Ensure particles are in the background */
+  top: 0;
+  left: 0;
+}
+
+#tsparticles {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: 0; /* Ensure particles are behind everything */
+  clip-path: inset(0px 0px 0px 0px); /* Default: no clipping */
+}
+
 .contact-container {
-    display: flex;
-    justify-content: center; /* Centers horizontally */
-    align-items: center; /* Centers vertically */
-    height: 100vh; /* Full viewport height */
-    background-color: #242424; /* Dark background for the page */
+  
+  display: flex;
+  justify-content: center; /* Centers horizontally */
+  align-items: center; /* Centers vertically */
+  height: 100vh; /* Full viewport height */
+  background-color: transparent; /* Keep it transparent for particles to show behind */
+  z-index: 2; /* Ensure it is above particles */
+  position: relative;
+
   }
+
+  @keyframes gradientAnimation {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+  }
+
+
   
   /* Styles for the semi-transparent box */
   .contact-box {
-    background-color: rgba(255, 255, 255, 0.1); /* Semi-transparent grey */
+    background-color: rgb(58, 51, 51); /* Semi-transparent grey */
     padding: 2rem;
     border-radius: 10px; /* Rounded corners */
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3); /* Subtle shadow for depth */
@@ -16,15 +51,25 @@
     width: 90%;
     max-width: 500px; /* Ensure the box doesn't get too wide */
     text-align: center;
+    z-index: 3; /* Ensure it's above particles */
+    position: relative; /* Ensure proper stacking */
   }
+
+  
+
+  
+
+  
   
   /* Align input fields within the box */
   .contact-thing {
+    z-index: 3;
     margin-bottom: 1rem;
   }
   
   /* Style for labels */
   .contact-message {
+    z-index: 3;
     font-size: 1rem;
     margin-bottom: 0.5rem;
   }

@@ -1,6 +1,23 @@
 
-import "../Styles/Projects.css"
+import "../Styles/Projects4.css"
+import { useEffect } from 'react';
+import Particles from "react-tsparticles";
+import { loadFull } from "tsparticles";
+
 const Projects = () => {
+
+  
+  
+  useEffect(() => {
+          // Disable scrolling
+          document.body.style.overflowX = 'hidden';
+      
+          // Re-enable scrolling when leaving the page
+          return () => {
+            document.body.style.overflowX = 'auto';
+          };
+        }, []);
+
   const runGame = async () => {
     try {
       const response = await fetch('http://localhost:5000/run_game', {

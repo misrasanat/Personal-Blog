@@ -18,7 +18,7 @@ const Home = () => {
             {/* Welcome Section */}
             <div className="welcome-section">
             <h1>Welcome to My Personal Website</h1>
-            <div class="separator"></div>
+            <div className="separator"></div>
             <p>Explore my projects, learn more about me, or get in touch!</p>
             </div>
 

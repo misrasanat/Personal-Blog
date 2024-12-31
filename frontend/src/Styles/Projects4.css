@@ -1,4 +1,7 @@
 .projects-container {
+    background: url('https://i.imgur.com/lPfgYip.png') no-repeat center center fixed;
+    background-size: cover;
+    color: white;
     padding: 0 20px; /* Optional: Add horizontal padding for smaller screens */
     padding-top: 4rem !important;
     text-align: center;

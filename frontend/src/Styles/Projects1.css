@@ -1,4 +1,8 @@
 .projects-container {
+    background: url('https://www.transparenttextures.com/patterns/asfalt-dark.png'); /* Example texture */
+    background-color: #1b263b; /* Fallback color */
+    background-size: cover;
+    color: white;
     padding: 0 20px; /* Optional: Add horizontal padding for smaller screens */
     padding-top: 4rem !important;
     text-align: center;
@@ -18,18 +22,6 @@
 
     min-height: 100vh; /* Ensures it spans the entire viewport */
     
-}
-
-@keyframes gradientAnimation {
-  0% {
-      background-position: 0% 50%;
-  }
-  50% {
-      background-position: 100% 50%;
-  }
-  100% {
-      background-position: 0% 50%;
-  }
 }
   
 .projects-title {

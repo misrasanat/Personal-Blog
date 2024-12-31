@@ -1,4 +1,14 @@
 .projects-container {
+    background: linear-gradient(
+      -45deg,
+      #0d1b2a,
+      #1b263b,
+      #415a77,
+      #778da9
+    );
+    background-size: 400% 400%;
+    animation: gradientAnimation 10s ease infinite;
+    color: white;
     padding: 0 20px; /* Optional: Add horizontal padding for smaller screens */
     padding-top: 4rem !important;
     text-align: center;
