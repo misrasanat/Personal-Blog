@@ -1,13 +1,141 @@
-.text-alignment {
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+
+.home-container {
     display: flex; /* Enables flexbox */
     flex-direction: column; /* Stacks the content vertically */
     justify-content: center; /* Centers content vertically */
     align-items: center; /* Centers content horizontally */
     height: 100vh; /* Full viewport height */
+    width: 100vw;
     text-align: center; /* Center the text inside each element */
-    background-image: url('../path-to-your-image.jpg'); /* Replace with your actual image path */
+    background-attachment: fixed;    
+    background-image: url('https://i.imgur.com/lPfgYip.png'); /* Replace with your actual image path */
     background-size: cover; /* Ensures the image covers the entire viewport */
     background-position: center; /* Centers the background image */
     background-repeat: no-repeat; /* Prevents repeating */
     color: #ffffff; /* White text color for contrast */
+    margin-left: -75px; /* Shift the entire container slightly to the left */
+    image-rendering: optimizeQuality;
+    overflow: hidden;
 }
+
+.separator {
+    width: 50px;
+    height: 3px;
+    background-color: #646cff; /* Match your theme */
+    margin: 1rem auto; /* Center it */
+    border-radius: 2px;
+}
+
+/* Welcome Section */
+.welcome-section {
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.4)); /* Gradient effect */
+    padding: 2rem;
+    border-radius: 8px; /* Add rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Subtle shadow */
+    width: 800px;
+    animation: fadeIn 1.5s ease-in-out;
+}
+.welcome-section h1 {
+    font-size: 3.5 rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+    animation: fadeIn 1.5s ease-in-out;
+    font-family: 'Montserrat', sans-serif; /* Bold modern font */
+    color: #ffffff; /* White text */
+    
+  }
+  
+  .welcome-section p {
+    font-family: 'Roboto', sans-serif; /* Clean sans-serif font */
+    font-size: 1.2rem;
+    color: #ddd; /* Softer color for the description */
+    font-weight: 700;
+    animation: fadeIn 1.5s ease-in-out;
+    
+  }
+
+
+
+
+/* Cards Section */
+.cards-section {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    margin-top: 3rem;
+  }
+
+
+
+/* Cards Section */
+.cards-section {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    margin-top: 3rem;
+  }
+
+
+  /* Individual Card Styles */
+.card {
+    background: rgba(0, 0, 0, 0.7); /* Semi-transparent background */
+    color: white;
+    border-radius: 8px;
+    overflow: hidden;
+    text-align: center;
+    cursor: pointer;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    width: 300px;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+
+  img {
+    width: 100%; /* Ensures the image scales properly */
+    height: auto; /* Maintains aspect ratio */
+    object-fit: contain; /* Ensures the whole image is visible */
+}
+  
+  .card img {
+    width: 100%;
+    height: 60%;
+    object-fit: contain;
+    margin-bottom: 10px;
+  }
+  
+  .card h2 {
+    font-size: 1.5rem;
+    margin: 1rem 0 0.5rem;
+  }
+  
+  .card p {
+    font-size: 1rem;
+    padding: 0 1rem;
+    color: #ccc;
+  }
+  
+  .card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5);
+  }
+  
+  /* Keyframes for Fade-In Animation */
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(-10px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }

@@ -1,9 +1,11 @@
 .projects-container {
-    margin-top: 0px; /* Adjust to match the height of your navbar */
     padding: 0 20px; /* Optional: Add horizontal padding for smaller screens */
+    padding-top: 4rem !important;
     text-align: center;
     margin: 0;
     padding: 0;
+    overflow: auto;
+    
 }
   
 .projects-title {

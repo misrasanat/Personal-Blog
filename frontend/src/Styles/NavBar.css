@@ -1,61 +1,61 @@
-.custom-navbar {
-  background-color: #343a40; /* Dark background color for the bar */
-  color: white; /* Text color for contrast */
-  position: fixed; /* Fix the navbar to the top of the screen */
-  top: 0; /* Align it to the top */
+.navbar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  top: 0;
   left: 0;
   right: 0;
-  z-index: 1030; /* Ensure it stays above other elements */
-  border-bottom: 1px solid #444; /* Subtle border for separation */
-  padding: 0.5rem 1rem
+  height: 70px; /* Adjust the navbar height */
+  background-color: rgba(20, 20, 20, 0.85); /* Semi-transparent dark background */
+  color: #ffffff;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  z-index: 1000; /* Ensure it stays above all content */
 }
 
-.nav-item {
-  flex: 1; /* Ensures equal spacing between the items */
-  text-align: center;
+/* Navbar Container */
+.navbar-container {
+  width: 90%;
+  max-width: 1200px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
-.navbar-nav {
-  width: 100%; /* Ensure the nav takes up full width */
-  justify-content: space-evenly; /* Equal spacing between nav items */
+/* Logo Styles */
+.navbar-logo .navbar-brand {
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: #646cff;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.navbar-logo .navbar-brand:hover {
+  color: #535bf2; /* Slightly darker shade for hover */
+}
+
+/* Navbar Links */
+.navbar-links {
+  display: flex;
+  gap: 2rem;
 }
 
 .nav-link {
-  font-size: 1.1rem; /* Adjust font size for better readability */
-  margin-right: 10rem; /* Add spacing between links */
-  color: #ffffff; /* Default link color */
-  transition: color 0.3s ease; /* Smooth hover effect */
+  font-size: 1rem;
+  font-weight: bold;
+  color: #ffffff;
+  text-decoration: none;
+  transition: color 0.3s ease-in-out;
 }
 
 .nav-link:hover {
-  color: #007bff; /* Change to a primary color on hover */
-  text-decoration: underline;
+  color: #646cff; /* Highlight color */
 }
 
-.navbar-brand {
-  font-size: 1.5rem; /* Make the brand name larger */
-  font-weight: bold;
-  text-align: center;
-}
-
-.toggle-button {
-  position: absolute; /* Position relative to the parent container */
-  top: 10px; /* Adjust spacing from the top */
-  right: 15px; /* Adjust spacing from the right */
-  background-color: #ffffff; /* Background for toggle button */
-  border: none; /* Remove border */
-}
-
-.toggle-button:hover {
-  background-color: #ffc107; /* Change background color on hover */
-  transform: scale(1.1); /* Slightly enlarge the button */
-  cursor: pointer; /* Show pointer cursor */
-}
-
-.toggle-button:focus {
-  outline: none; /* Remove the focus outline */
-}
-
+/* Add margin for the content to account for the navbar height */
 body {
-  padding-top: 60px; /* Adjust this value based on the navbar height */
+  margin-top: 70px; /* Match the height of the navbar */
+  padding: 0;
+  
 }
