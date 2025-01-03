@@ -1,0 +1,44 @@
+.about-container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px 30px;
+    font-family: 'Arial', sans-serif;
+    line-height: 1.8;
+    color: #f5f5f5;
+    background-color: #1e3a8a; /* A stylish shade of blue */
+    border-radius: 12px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.about-container:hover {
+    transform: scale(1.03);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+}
+
+.about-title {
+    text-align: center;
+    color: #e0f2fe; /* Light blue text */
+    font-size: 2.8em;
+    font-weight: bold;
+    margin-bottom: 20px;
+    text-shadow: 1px 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.about-paragraph {
+    font-size: 1.3em;
+    margin-bottom: 18px;
+    color: #dbeafe; /* Softer blue text */
+}
+
+.about-paragraph strong {
+    color: #fef9ef; /* Contrasting off-white for emphasis */
+}
+
+.about-container:hover .about-paragraph {
+    color: #ffffff; /* Slightly brighter text on hover */
+}
+
+.about-paragraph:last-child {
+    margin-bottom: 0;
+}

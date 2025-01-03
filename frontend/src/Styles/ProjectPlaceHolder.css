@@ -1,0 +1,97 @@
+.project-page {
+    max-width: 900px;
+    margin: 40px auto;
+    padding: 20px;
+    background-color: #f9fafb; /* Light background for better readability */
+    border-radius: 12px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+    font-family: 'Arial', sans-serif;
+    line-height: 1.8;
+    color: #333;
+    text-align: left;
+    transition: transform 0.2s ease, box-shadow 0.3s ease;
+    position: relative;
+}
+
+.project-title {
+    font-size: 2.5em;
+    text-align: center;
+    color: #1e3a8a; /* Stylish shade of blue */
+    margin-bottom: 20px;
+    text-shadow: 1px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.project-description {
+    font-size: 1.3em;
+    margin-bottom: 20px;
+    color: #555;
+    text-align: justify;
+}
+
+.project-highlight {
+    font-weight: bold;
+    color: #1e40af; /* Darker blue for emphasis */
+}
+
+.project-link-container {
+    text-align: center;
+    margin-top: 30px;
+}
+
+.project-link {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #1e3a8a; /* Blue button background */
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 1.2em;
+    font-weight: bold;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.project-link:hover {
+    background-color: #17458a; /* Darker blue on hover */
+    transform: translateY(-3px);
+}
+
+@media (max-width: 768px) {
+    .project-page {
+        padding: 15px;
+    }
+
+    .project-title {
+        font-size: 2em;
+    }
+
+    .project-description {
+        font-size: 1.1em;
+    }
+
+    .project-link {
+        font-size: 1em;
+        padding: 8px 16px;
+    }
+}
+
+.play-game-link {
+    position: absolute; /* Absolute positioning relative to the card */
+    bottom: 10px; /* Adjust distance from the bottom */
+    right: 10px; /* Adjust distance from the right */
+    margin-left: 10px; /* Space between links */
+    color: #ffffff; /* White color */
+    background-color: #007bff; /* Blue button-like background */
+    background-blend-mode: color;
+    text-decoration: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+    font-size: 0.9rem;
+    cursor: pointer;
+    
+  }
+  
+  .play-game-link:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+  }

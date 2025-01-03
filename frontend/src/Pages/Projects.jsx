@@ -71,23 +71,23 @@ const Projects = () => {
         <div className="project-card">
           <h3>Python-Based Connect Four Game with Online Play</h3>
           <p>A Python-shell Connect Four game with customizable board sizes (4x4 to 20x20), traditional and "Pop Out" rules, and online play via a shared server.</p>
-          <a href="https://github.com/yourgithub/project2" target="_blank" rel="noopener noreferrer">View Project</a>
+          <a href="https://drive.google.com/drive/folders/1t7x0zcGYfDDOdEUcjesNy3CN3MaOvKZr?usp=sharing" target="_blank" rel="noopener noreferrer">View Project</a>
         </div>
         {/* Add more project cards as needed */}
         <div className="project-card">
           <h3>Weather Analysis Program with API Integration</h3>
           <p>A Python program that fetches and analyzes weather data using Nominatim and National Weather Service APIs, providing forecasts, "feels like" temperatures, and geolocation details with support for real-time and local data.</p>
-          <a href="https://github.com/yourgithub/project2" target="_blank" rel="noopener noreferrer">View Project</a>
+          <a href="https://drive.google.com/drive/folders/1IFRGyCUSXQo19DdRsTYR_MaZFkNTrSKz?usp=sharing" target="_blank" rel="noopener noreferrer">View Project</a>
         </div>
         <div className="project-card">
           <h3>Columns Game Mechanics Simulation</h3>
           <p>A Python program simulating Columns' core mechanics, including falling, rotating, and matching jewels on a customizable grid, using object-oriented programming for game logic and unittest for test-driven development.</p>
-          <a href="https://github.com/yourgithub/project2" target="_blank" rel="noopener noreferrer">View Project</a>
+          <a href="https://drive.google.com/drive/folders/1ggcSFuDz1wR2jc4w4476bf5hD6AQFhDd?usp=sharing" target="_blank" rel="noopener noreferrer">View Project</a>
         </div>
         <div className="project-card">
           <h3>Interactive Columns Game with PyGame</h3>
           <p>This project brings the Columns game to life with a graphical interface using PyGame. It features real-time gameplay, keyboard controls for rotation and movement, and a resizable game board. With randomized faller generation, vibrant jewel colors, and visual cues for landing and matching, the game delivers an engaging interactive experience.</p>
-          <a href="https://github.com/yourgithub/project2" target="_blank" rel="noopener noreferrer">View Project</a>
+          <a href="https://drive.google.com/drive/folders/1qLiLMTuVw7YIJ8U0P1zhutqKhIPWSfX4?usp=sharing" target="_blank" rel="noopener noreferrer">View Project</a>
           <button onClick={runGame} className="play-game-link">Play Game</button>
           {/*<a href="http://localhost:5000/run_game" target="_blank" rel="noopener noreferrer" className="play-game-link">Play Game</a>*/}
         </div>
