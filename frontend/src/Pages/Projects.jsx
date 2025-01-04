@@ -1,5 +1,5 @@
 
-import "../Styles/Projects4.css"
+/*import "../Styles/Projects.css"*/
 import { useEffect } from 'react';
 import Particles from "react-tsparticles";
 import { loadFull } from "tsparticles";

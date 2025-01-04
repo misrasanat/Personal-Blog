@@ -1,5 +1,5 @@
 import React from 'react';
-import '../Styles/ProjectPlaceHolder.css';
+/*import '../Styles/ProjectPlaceHolder.css';*/
 
 const Project1 = () => (
     <div className="project-page">

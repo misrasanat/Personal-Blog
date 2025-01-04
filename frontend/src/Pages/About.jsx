@@ -1,4 +1,4 @@
-import '../Styles/About.css';
+/*import '../Styles/About.css';*/
 
 const About = () => (
     <div className="about-container">

@@ -10,6 +10,7 @@ import Contact from './Pages/Contact';
 import Project1 from './Pages/Project1';
 import Project2 from './Pages/Project2';
 import RandomImage from './Pages/RandomImage';
+import './Styles/Application.scss';
 import './App.css'
 
 

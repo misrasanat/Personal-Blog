@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { Form, Button } from 'react-bootstrap';
-import "../Styles/ContactSetup.css";
+/*import "../Styles/ContactSetup.css";*/
 import Particles from "react-tsparticles";
 import { loadFull } from "tsparticles";
 

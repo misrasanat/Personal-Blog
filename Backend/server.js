@@ -16,7 +16,7 @@ app.get('/random-image', async(req, res) => {
             params: {
                 key: api_key,
                 image_type: 'photo', // Only fetch photos
-                per_page: 3, // Get only one image
+                per_page: 50
             }
         });
         console.log(response.data); // Log full API response for debugging
