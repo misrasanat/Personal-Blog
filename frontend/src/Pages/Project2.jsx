@@ -6,7 +6,7 @@ const Project2 = () => {
 
     const runGame = async () => {
         try {
-          const response = await fetch('http://localhost:5000/run_game', {
+          const response = await fetch('https://personalblogmisrasanatflask.onrender.com/run_game', {
             method: 'POST',
             headers: {
               'Content-Type': 'application/json',
