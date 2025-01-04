@@ -7,7 +7,7 @@ const RandomImage = () => {
     const fetchImage = async () => {
         setLoading(true);
         try {
-            const response = await fetch('http://localhost:5001/random-image');
+            const response = await fetch('https://personalblogmisrasanat.onrender.com/random-image');
             const data = await response.json();
             if (data.imageUrl) {
                 setImageUrl(data.imageUrl);

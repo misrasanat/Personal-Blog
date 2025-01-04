@@ -4,7 +4,7 @@ const cors = require('cors');
 require('dotenv').config();
 
 const app = express();
-const PORT = 5001; // Different Port than my Flask Backend
+const PORT = process.env.PORT || 5001;
 
 app.use(cors());
 app.use(express.json())
